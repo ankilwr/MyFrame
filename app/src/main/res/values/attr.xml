@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ==========    HomeTabButton    ===========    HomeTabButton    =========== -->
+    <!-- ==========    HomeTabButton    ===========    HomeTabButton    =========== -->
+    <!-- ==========    HomeTabButton    ===========    HomeTabButton    =========== -->
+    <declare-styleable name="HomeTabButton">
+        <attr name="top_on" format="reference" />
+        <attr name="top_off" format="reference" />
+        <attr name="left_on" format="reference" />
+        <attr name="left_off" format="reference" />
+        <attr name="right_on" format="reference" />
+        <attr name="right_off" format="reference" />
+        <attr name="bottom_on" format="reference" />
+        <attr name="bottom_off" format="reference" />
+        <attr name="textColor_on" format="reference|color" />
+        <attr name="textColor_off" format="reference|color" />
+        <attr name="background_on" format="reference" />
+        <attr name="background_off" format="reference" />
+        <attr name="checked" format="boolean" />
+        <attr name="match_parent" format="boolean" />
+        <!--
+        <attr name="image_off" format="reference" />
+        <attr name="image_on" format="reference" />
+        <attr name="drawableDirection">
+            <enum name="text_top" value="0" />
+            <enum name="text_bottom" value="1" />
+            <enum name="text_left" value="2" />
+            <enum name="text_right" value="3" />
+        </attr>
+        -->
+    </declare-styleable>
+
+</resources>

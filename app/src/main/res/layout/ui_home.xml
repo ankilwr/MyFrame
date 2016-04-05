@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/title_theme"/>
+
+    <com.shihang.myframe.view.HomeTabGroup
+        android:id="@+id/tabGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="3dp"
+        android:layout_alignParentBottom="true">
+
+        <com.shihang.myframe.view.HomeTabButton
+            style="@style/homeTabStyle"
+            app:top_on="@mipmap/tab_home_true"
+            app:top_off="@mipmap/tab_home_false"
+            app:textColor_on="@color/tabColor_true"
+            app:textColor_off="@color/tabColor_false"
+            app:checked="true"
+            android:text="首页"/>
+
+        <com.shihang.myframe.view.HomeTabButton
+            style="@style/homeTabStyle"
+            app:top_on="@mipmap/tab_order_true"
+            app:top_off="@mipmap/tab_order_false"
+            app:textColor_on="@color/tabColor_true"
+            app:textColor_off="@color/tabColor_false"
+            android:textSize="12sp"
+            android:text="店铺"/>
+
+
+        <com.shihang.myframe.view.HomeTabButton
+            style="@style/homeTabStyle"
+            app:top_on="@mipmap/tab_shopcar_true"
+            app:top_off="@mipmap/tab_shopcar_false"
+            app:textColor_on="@color/tabColor_true"
+            app:textColor_off="@color/tabColor_false"
+            android:text="购物车"/>
+
+
+        <com.shihang.myframe.view.HomeTabButton
+            style="@style/homeTabStyle"
+            app:top_on="@mipmap/tab_info_true"
+            app:top_off="@mipmap/tab_info_false"
+            app:textColor_on="@color/tabColor_true"
+            app:textColor_off="@color/tabColor_false"
+            android:text="我的"/>
+
+    </com.shihang.myframe.view.HomeTabGroup>
+
+    <View style="@style/lineStyle"
+        android:layout_above="@id/tabGroup"
+        android:id="@+id/line"/>
+
+
+    <com.shihang.myframe.view.MyViewPage
+        android:id="@+id/viewPage"
+        android:layout_below="@id/titleLayout"
+        android:layout_above="@id/line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>
